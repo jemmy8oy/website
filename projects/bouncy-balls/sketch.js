@@ -18,4 +18,5 @@ function touchStarted() {
         balls.push(new Ball(mouseX, mouseY, 50));
 
     }
+    return false;
 }
