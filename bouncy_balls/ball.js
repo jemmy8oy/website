@@ -4,7 +4,7 @@ class Ball {
         this.y = y;
         this.size = size;
         this.v = 1;
-        this.a = 2;
+        this.a = 1;
     }
 
     show() {
