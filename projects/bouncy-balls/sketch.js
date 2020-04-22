@@ -13,7 +13,7 @@ function draw() {
     }
 }
 
-function mouseClicked() {
+function touchStarted() {
     if (mouseY < 575) {
         balls.push(new Ball(mouseX, mouseY, 50));
 
