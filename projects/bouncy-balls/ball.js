@@ -14,7 +14,7 @@ class Ball {
 
     update() {
         this.v += this.a;
-        if (this.y + this.v <= 600 - this.size / 2) {
+        if (this.y + this.v <= this.size - this.size / 2) {
             this.y += this.v;
         } else {
             this.v = -this.v * 0.8;

@@ -15,6 +15,7 @@ function draw() {
 
 function windowResized() {
     resize();
+    balls =[];
 }
 
 function resize() {
