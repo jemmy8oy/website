@@ -1,8 +1,9 @@
 class Ball {
-    constructor(x, y, size) {
+    constructor(x, y, size, canvasSize) {
         this.x = x;
         this.y = y;
         this.size = size;
+        this.canvasSize = canvasSize;
         this.v = 1;
         this.a = 1;
     }
@@ -14,7 +15,7 @@ class Ball {
 
     update() {
         this.v += this.a;
-        if (this.y + this.v <= this.size - this.size / 2) {
+        if (this.y + this.v <= this.canvasSize - this.size / 2) {
             this.y += this.v;
         } else {
             this.v = -this.v * 0.8;

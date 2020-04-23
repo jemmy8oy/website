@@ -1,5 +1,6 @@
 let balls =[];
 let canvas;
+let canvasSize;
 function setup() {
     canvas = createCanvas(600, 600);
     resize();
@@ -31,7 +32,7 @@ function resize() {
 
 function touchStarted() {
     if (mouseX > 0 && mouseX < canvasSize && mouseY > 0 && mouseY < canvasSize) {
-        balls.push(new Ball(mouseX, mouseY, 50));
+        balls.push(new Ball(mouseX, mouseY, 50, canvasSize));
         return false;
     }
 }
