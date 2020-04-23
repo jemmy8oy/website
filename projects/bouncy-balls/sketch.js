@@ -13,6 +13,10 @@ function draw() {
     }
 }
 
+function windowResized() {
+    resize();
+}
+
 function resize() {
     if (windowWidth < windowHeight) {
         canvasSize = windowWidth * 0.9;
