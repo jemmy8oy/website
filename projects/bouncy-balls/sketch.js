@@ -1,6 +1,8 @@
 let balls =[];
+let canvas;
 function setup() {
-    createCanvas(600, 600);
+    canvas = createCanvas(600, 600);
+    resize();
 }
 
 function draw() {
@@ -10,6 +12,17 @@ function draw() {
         balls[i].show();
     }
 }
+
+function resize() {
+    if (windowWidth < windowHeight) {
+        canvasSize = windowWidth * 0.9;
+    } else {
+        canvasSize = windowHeight * 0.9;
+    }
+    resizeCanvas(canvasSize, canvasSize);
+    canvas.position((windowWidth - width) / 2, (windowHeight - width) / 2);
+}
+
 
 function touchStarted() {
     if (mouseX > 0 && mouseX < canvasSize && mouseY > 0 && mouseY < canvasSize) {
