@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paddle Ball</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="game.js"></script>
+    <script src="paddle.js"></script>
+    <script src="character.js"></script>
+</head>
+<body>
+<div>
+    <a href="..">Back</a>
+</div>
+<div>
+    Jump Power<input type="range" min="1" max="20" value="5" onchange="jumpPower = this.value" onkeydown="event.preventDefault()">
+</div>
+<div>
+    Gravity<input type="range" min="10" max="100" value="30" onchange="g = this.value" onkeydown="event.preventDefault()">
+</div>
+<div>
+    User Acceleration<input type="range" min="1" max="50" value="10" onchange="a = this.value" onkeydown="event.preventDefault()">
+</div>
+<div>
+    Friction<input type="range" min="1" max="50" value="10" onchange="f = this.value" onkeydown="event.preventDefault()">
+</div>
+<div>
+    Horizontal Max Velocity<input type="range" min="1" max="50" value="5" onchange="vmax = this.value" onkeydown="event.preventDefault()">
+</div>
+</body>
+</html>
